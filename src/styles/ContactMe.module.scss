@@ -1,0 +1,31 @@
+.ContactMe {
+    align-items: center;
+    background-color: rgb(18, 18, 19);
+    padding: 5%
+}
+.contactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.bigText {
+    font-size: 2rem;
+    color: white;
+    margin: 0 0 0 0;
+}
+.iconContainer {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+}
+.normalText {
+    font-size: 1.2rem; 
+    color: rgb(149, 152, 155);
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 6%;
+}
