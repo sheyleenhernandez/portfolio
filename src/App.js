@@ -1,10 +1,18 @@
-import './App.css';
-import Header from './components/Header';
+import './styles/global.scss';
+import { Header } from './components';
+import { Home, AboutMe, Skills, Projects, ContactMe } from './layouts';
 
 function App() {
   return (
     <div className="App">
-      <Header title={'Mi portfolio'}/>
+      <Header/>
+      <main>
+        <Home />
+        <AboutMe />
+        <Skills />
+        <Projects />
+        <ContactMe />
+      </main>
     </div>
   );
 }
