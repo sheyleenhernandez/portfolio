@@ -1,0 +1,15 @@
+import code from './code.png';
+import communication from './conversation.png';
+import leadership from './leadership.png';
+import me from './me.jpeg';
+import problemsolving from './problem-solving.png';
+import teamwork from './teamwork.png';
+import php from './php.png';
+import python from './python.png';
+import vue from './vue.png';
+import react from './react.png';
+import project from './project.png';
+import github from './github.png';
+import gmail from './gmail.png';
+import whatsapp from './whatsapp.png';
+export {code, communication, leadership, me, problemsolving, teamwork, php, python, vue, react, project, github, gmail, whatsapp};
