@@ -6,8 +6,8 @@ const ProgressBar = ({ data }) => {
         <div className="grid grid-cols-2 gap-10 px-20">
             {data.map((data, index) =>(
                 
-                <div>
-                    <div key={index} className="flex justify-between mb-3">
+                <div key={index} >
+                    <div className="flex justify-between mb-3">
                         <span className="text-base font-medium text-gray-300 dark:text-white">
                             {data.title}
                         </span>
