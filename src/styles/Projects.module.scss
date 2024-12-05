@@ -7,22 +7,20 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 60px;
 }
 .divIcon {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    border-right: 1px solid rgb(72, 70, 70);
-    padding: 5%;
-}
-.divIcon2 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    border-right: 1px solid rgb(22, 22, 22);
+
     padding: 4%;
+    border-radius: 30px;
+
 }
+
 
 .icon {
     height: 90px;
