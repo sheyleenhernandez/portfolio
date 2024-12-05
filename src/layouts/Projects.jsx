@@ -18,7 +18,7 @@ const Projects = () => {
         <Icon divClass={styles.divIcon} src={project} alt={projectsData.altProject} imageClassName={styles.icon} textClassName={styles.iconText} textContent={projectsData.projectName} />
         <Icon divClass={styles.divIcon} src={project} alt={projectsData.altProject} imageClassName={styles.icon} textClassName={styles.iconText} textContent={projectsData.projectName} />
         <Icon divClass={styles.divIcon} src={project} alt={projectsData.altProject} imageClassName={styles.icon} textClassName={styles.iconText} textContent={projectsData.projectName} />
-        <Icon divClass={styles.divIcon2} src={project} alt={projectsData.altProject} imageClassName={styles.icon} textClassName={styles.iconText} textContent={projectsData.projectName} />
+        <Icon divClass={styles.divIcon} src={project} alt={projectsData.altProject} imageClassName={styles.icon} textClassName={styles.iconText} textContent={projectsData.projectName} />
       </div>
     </section>
   );
