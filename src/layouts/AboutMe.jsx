@@ -1,7 +1,7 @@
 import React from 'react';
-import  { Timeline, Text, Image, Icon }  from '../components';
+import  {  Text, Image, Icon }  from '../components';
 import styles from '../styles/AboutMe.module.scss'; 
-import { me, communication, leadership, teamwork, problemsolving, php, python, vue, react } from '../assets/images'
+import {  me, communication, leadership, teamwork, problemsolving } from '../assets/images'
 
 const AboutMe = () => {
   const aboutMeData = {
@@ -16,33 +16,28 @@ const AboutMe = () => {
     iconName4: "Teamwork",
     altIcon1: "I am communicative",
   };
-  const milestones = [
-    {date: '2022', event: 'PHP', image: php},
-    {date: '2022', event: 'Python/Flask', image: python},
-    {date: '2023', event: 'Vue + Vite', image: vue},
-    {date: '2024', event: 'React/React Native', image: react},
 
-  ]
   return (
     <section className={styles.AboutMe} id="about">
       <div className={styles.aboutMeInfo}>
-        <div className={styles.aboutMeContainer}>
+        <div>
           <Image src={me} alt={aboutMeData.altMe} className={styles.me}/>
         </div>
         <div className={styles.aboutMeContainer}>
           <Text className={styles.bigText} textContent={aboutMeData.title}/>
           <Text className={styles.normalText} textContent={aboutMeData.text}/>
-          <Text className={styles.bigText} textContent={aboutMeData.title2}/>  
-          <div className={styles.iconContainer}>
-            <Icon divClass={styles.divIcon} src={communication} alt={aboutMeData.altIcon1} imageClassName={styles.icon} textClassName={styles.iconText} textContent={aboutMeData.iconName} />
-            <Icon divClass={styles.divIcon} src={leadership} alt={aboutMeData.altIcon1} imageClassName={styles.icon} textClassName={styles.iconText} textContent={aboutMeData.iconName2} />
-            <Icon divClass={styles.divIcon} src={problemsolving} alt={aboutMeData.altIcon1} imageClassName={styles.icon} textClassName={styles.iconText} textContent={aboutMeData.iconName3} />
-            <Icon divClass={styles.divIcon} src={teamwork} alt={aboutMeData.altIcon1} imageClassName={styles.icon} textClassName={styles.iconText} textContent={aboutMeData.iconName4} />
+          <div className={styles.skillsDiv}>
+            <Text className={styles.bigText} textContent={aboutMeData.title2}/>  
+            <div className={styles.iconContainer}>
+              <Icon divClass={styles.divIcon} src={communication} alt={aboutMeData.altIcon1} imageClassName={styles.icon} textClassName={styles.iconText} textContent={aboutMeData.iconName} />
+              <Icon divClass={styles.divIcon} src={leadership} alt={aboutMeData.altIcon1} imageClassName={styles.icon} textClassName={styles.iconText} textContent={aboutMeData.iconName2} />
+              <Icon divClass={styles.divIcon} src={problemsolving} alt={aboutMeData.altIcon1} imageClassName={styles.icon} textClassName={styles.iconText} textContent={aboutMeData.iconName3} />
+              <Icon divClass={styles.divIcon} src={teamwork} alt={aboutMeData.altIcon1} imageClassName={styles.icon} textClassName={styles.iconText} textContent={aboutMeData.iconName4} />
+            </div>
           </div>
         </div>
       </div>
-      <Text className={styles.bigText} textContent={aboutMeData.content}/>
-      <Timeline milestones={milestones}></Timeline>
+
     </section>
   );
 };
