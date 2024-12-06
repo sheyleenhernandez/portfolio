@@ -1,6 +1,6 @@
 import './styles/global.scss';
 import { Header } from './components';
-import { Home, AboutMe, Skills, Projects, ContactMe } from './layouts';
+import { Home, AboutMe, Skills, Projects, ContactMe, LearningPath } from './layouts';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <main>
         <Home />
         <AboutMe />
+        <LearningPath/>
         <Skills />
         <Projects />
         <ContactMe />
@@ -16,5 +17,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
